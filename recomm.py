@@ -46,6 +46,6 @@ item_sim_recomm = item_sim_model.recommend(users=range(1,100),k=20)
 
 item_sim_recomm.print_rows(num_rows=2000)
 
+model_performance = graphlab.compare(test_data,[item_sim_model])
 
-
-
+graphlab.show_comparison(model_performance,[item_sim_model])
